@@ -1,5 +1,4 @@
 import Store from './storage.js';
-import Render from './displaytodo.js';
 
 export default function updateStatus(checkbox) {
   const { id } = checkbox;
@@ -11,4 +10,4 @@ export default function updateStatus(checkbox) {
     return task;
   });
   localStorage.setItem('tasks', JSON.stringify(tasks));
-};
+}
