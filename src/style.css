@@ -37,12 +37,15 @@ main {
 
 .title h1 {
   font-size: 18px;
+}
+
+.title h1,
+.title i {
   color: rgb(148, 148, 148);
 }
 
 .title i {
   margin-top: 3px;
-  color: rgb(148, 148, 148);
 }
 
 /*  ---------    Form Style ------ */
@@ -57,9 +60,19 @@ main {
 .list-form,
 .list-form input,
 .list-form button {
-  background-color: rgb(255, 255, 255);
   font-style: italic;
   font-size: 16px;
+}
+
+.list-form,
+.list-form input,
+.list-form button,
+input[type=text],
+.todo,
+.todo p,
+.todo i,
+#add-list-btn i  {
+  background-color: rgb(255, 255, 255);
 }
 
 #add-list,
@@ -73,13 +86,6 @@ main {
 
 input[type=text] {
   width: 100%;
-  background-color: rgb(255, 255, 255);
-}
-
-.todo,
-.todo p,
-.todo i {
-  background-color: rgb(255, 255, 255);
 }
 
 .todo i {
@@ -88,7 +94,6 @@ input[type=text] {
 }
 
 #add-list-btn i {
-  background-color: rgb(255, 255, 255);
   color: rgb(148, 148, 148);
   cursor: pointer;
 }
