@@ -64,6 +64,11 @@ main {
   font-size: 16px;
 }
 
+.todo i {
+  width: 1%;
+  margin-left: 2%;
+}
+
 .list-form,
 .list-form input,
 .list-form button,
@@ -71,7 +76,7 @@ input[type=text],
 .todo,
 .todo p,
 .todo i,
-#add-list-btn i  {
+#add-list-btn i {
   background-color: rgb(255, 255, 255);
 }
 
@@ -86,11 +91,6 @@ input[type=text],
 
 input[type=text] {
   width: 100%;
-}
-
-.todo i {
-  width: 1%;
-  margin-left: 2%;
 }
 
 #add-list-btn i {

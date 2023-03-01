@@ -23,7 +23,7 @@ document.querySelector('.list-form').addEventListener('submit', (event) => {
 document.querySelector('.to-do-task').addEventListener('click', (event) => {
   // Edit ToDo
   if (event.target.classList.contains('p-element')) {
-    editTask(e.target);
+    editTask(event.target);
   // Remove Task
   } else if (event.target.tagName === 'I') {
     Store.removeTask(event.target);
@@ -31,7 +31,7 @@ document.querySelector('.to-do-task').addEventListener('click', (event) => {
 
     // Checked Tasks
   } else if (event.target.className === 'check') {
-    updateStatus(e.target);
+    updateStatus(event.target);
     if (event.target.checked) {
       event.target.nextElementSibling.style.textDecoration = 'line-through';
     } else {
